@@ -39,6 +39,7 @@ public class iteratorEx2 {
 	 */
 	
 	public static void removeTwo(List<String> list){
+		//assign iterator of list to itr
 		Iterator<String> itr = list.iterator();
 		while (itr.hasNext())
 			if(itr.next().length() ==2)
