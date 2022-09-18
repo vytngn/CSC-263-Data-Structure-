@@ -11,8 +11,7 @@
 - method named getMonthlyInterestRate() that returns the monthly interest rate 
 - method named getMontlyInterest() that returns the monthly interest 
 - method named withdraw() that withdraws a specified amount from the account 
-- method named deposit that deposits a specified amount to the account <br/>
-**Write a test demo program that creates: **
+- method named deposit that deposits a specified amount to the account <br/>**Write a test demo program that creates: **
 - An account object with an ID of 1122
 - A balance of $20,000.00,
 - An annual interest rate of 4.5%
