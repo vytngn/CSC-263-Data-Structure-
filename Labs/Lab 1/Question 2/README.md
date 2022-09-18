@@ -1,6 +1,7 @@
 Write a recursive method that parses a hex number as a string into a decimal integer.<br/>
 The method header is: <br/>
-> **public static int hex2Dec(String hexString)** <
+> **public static int hex2Dec(String hexString)** 
+> 
 ------------<br/>
 Write a demo program:
 - prompt the user to enter a hex string 
