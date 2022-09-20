@@ -9,3 +9,4 @@ Assume that findThis is in the list
 > ....<br/>
 > } <br/>
 > } <br/>
+**Solution:** can be solve by using *while* loop or *for* loop. 
