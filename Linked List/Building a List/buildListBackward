@@ -1,0 +1,19 @@
+Node buildListBackward(){
+
+  Node first, newNode;
+  int num;
+  
+  System.out.println("Enter integers ending with -999: ");
+  num = console.nextInt();
+  first = null;
+  
+  while(num !=-999){
+    newNode = new Node(); // crate a node 
+    newNode.info = num; //store the data in newNode
+    newNode.link = first; // put newNode at the beginning of the list 
+    first = newNode; // update the head of the list 
+    num = console.nextInt(); //get the next number 
+  } //end while 
+  return fist;
+ }//end buildListBackward
+  
