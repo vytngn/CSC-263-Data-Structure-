@@ -4,14 +4,13 @@ public class List {
   
 	/**Method findThis**/
 	public Node find(char findThis){
-		Node current = head; 
+		Node current  = head; 
 		
-		while(current !=null) {
-			if(current.info == findThis) {
-				return current;
-			}
-			current=current.link;
+		//while the info of current node is not equal to findThis element
+		while(current.info != findThis) {
+			x=x.link; //advance the link list
+			return x;
 		} //end while loop
 		return null;
-	}
+	}	
 }
