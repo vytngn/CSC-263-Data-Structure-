@@ -15,3 +15,20 @@ public void addLast(Object o){
                                 // the next field of lastNode is now point to headNode 
   } //end if-else 
 } // end method 
+
+/**Alternate method **/
+public void addLast(Object o){
+  if (isEmpty()){ //if the list if empty 
+    
+    lastNode = new ListNode(o,null); 
+    lastNode.setNext(lastNode); 
+    
+  } else // if list is NOT empty 
+    
+    headNode = lastNode; // point headNode to lastNode  
+    lastNode.setNext(new List (o, lastNode.getNext())); //create a new node and assign the "next" field of last Node to the node just created 
+    lastNode = lastNode.getNext();
+    lastNode.setNext(headNode);
+  } //end if-else 
+} // end method 
+
