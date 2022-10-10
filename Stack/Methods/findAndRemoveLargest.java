@@ -7,11 +7,12 @@
    //if stack is empty return -373
    if (myStack==0)
      return -373;
-   
-   //Create a temporary stack 
+   else{
+    //Create a temporary stack 
+    //set topelement of myStack to max value for comparing 
    StackClass temp = new StackClass(size);
    
-   //set top element of myStack to max value for comparing 
+   
    double max = myStack.peek()
      
    for( int i = 0; i<myStack.size(); i++){
@@ -30,7 +31,7 @@
    for(int i=0; i< myStack.size(); i++){
      double currentE = temp.pop()
        if(max !=currentE)
-       myStack.push(item);
+       myStack.push(currentE);
    }
    return max;
     
