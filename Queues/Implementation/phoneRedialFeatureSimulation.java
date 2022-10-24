@@ -1,4 +1,4 @@
-/* Simulate redial features of a phone */
+/* Simulate redial features of a phone using LinkedQueue */
 
 final String PERIOD = ".";
 
