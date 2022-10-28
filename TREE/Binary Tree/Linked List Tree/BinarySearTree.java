@@ -29,21 +29,24 @@ public class BinarySearchTree extends BinaryTree{
       }
   }
   
-  //using recursive in searching 
+  //non-recursive method call the recursive version of insert method 
   public void insert(Comparable item){
     setRoot(recurInsert(getRoot(),item));
   }
+  
   //private helper method 
   //find insertion point for new node and attaches it 
   // returns reference to TreeNode along insertion path 
   private TreeNode recurInsert(TreeNode t, Comparable item){
-    if (t==null)
+    //base case
+    if (t==null) 
       return new TreeNode(item);
+    //recursive cases
     else if(item.compareTo(t.getValue()) < 0)
       t.setLeft(recurInsert(t.getLeft(),item));
     else
       t.setRight(RecurInsert(t.getRight(),item));
-    return t;
+    return t; //return  reference to TreeNode object 
   }
 }
   
