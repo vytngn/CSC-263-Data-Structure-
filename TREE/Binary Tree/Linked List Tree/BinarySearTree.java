@@ -11,6 +11,8 @@ public class BinarySearchTree extends BinaryTree{
     else{
       TreeNode p = null;
       q = getRoot();
+      
+      //this while loop determine what side to go to 
       while(q !=null){
          p = q;
         if(items.compareTo(p.getValue()) < 0)
@@ -18,11 +20,13 @@ public class BinarySearchTree extends BinaryTree{
         else
           q = p.getRight();
       }
-   if(item.compareTo(p.getValue())>0)
-     p.setLeft(new TreeNode(item));
-   else
-     p.setRight(new TreeNode(item));
-    }
+      
+      //add the new node 
+      if(item.compareTo(p.getValue())>0)
+        p.setLeft(new TreeNode(item));
+      else
+        p.setRight(new TreeNode(item));
+      }
   }
   
   //using recursive in searching 
